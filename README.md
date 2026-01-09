@@ -402,13 +402,12 @@ data class DialOtaTypeStyle(
 
 # 第二步
 use POST to request https://u-watch.com.cn/api/app/ota/v3/list with form body:
-
-pageSize = xxx
+`pageSize = xxx
 pageNum = xxx // start from 0
 width = screenWidth
 height = screenHeight
 type = ota_type[i].dictValue
-style = ota_style[i].dictValue
+style = ota_style[i].dictValue`
 
 data class DialListResponse(
     val total: Int,
