@@ -386,12 +386,15 @@ UWatchBleManager.deleteTimedSportsData()
 use HealthDataUtil to calculate distance or calories
 
 how to get dial list
+
 use POST to request https://u-watch.com.cn/api/app/ota/otaType?height=${screenHeight}&width=${screenWidth}
+
 data class DialOtaData(
         val ota_type: MutableList<DialOtaTypeStyle>?,
         val ota_style: MutableList<DialOtaTypeStyle>?
 
 )
+
 data class DialOtaTypeStyle(
             val dictType: String?,
             val dictLabel: String?,
@@ -399,6 +402,7 @@ data class DialOtaTypeStyle(
 )
 
 use POST to request https://u-watch.com.cn/api/app/ota/v3/list with form body:
+
 pageSize = xxx
 pageNum = xxx // start from 0
 width = screenWidth
@@ -406,12 +410,14 @@ height = screenHeight
 type = ota_type[i].dictValue
 style = ota_style[i].dictValue
 }
+
 data class DialListResponse(
     val total: Int,
     val rows: List<DialItem>,
     val code: Int,
     val msg: String?
 )
+
 data class DialItem(
     val dialBinUrl: String?,
     val previewImageUrl: String?,
