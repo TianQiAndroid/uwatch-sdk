@@ -10,8 +10,10 @@ class MyBleManager : AbstractBleManager() {
 }
 // 初始化
 UWatchBleManager.init
+
 // 注册蓝牙连接状态
 UWatchBleManager.registerOnConnectionStateChangeLintener
+
 // 扫描设备
 use UWatchBLEScanner to scan UWatch device
 
