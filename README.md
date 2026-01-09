@@ -383,10 +383,12 @@ UWatchBleManager.getTimedSportsData()
 UWatchBleManager.deleteTimedSportsData()
 
 # 九、其他
+
+# 1. 计算距离和卡路里
 use HealthDataUtil to calculate distance or calories
 
-how to get dial list
-
+# 2. 获取表盘列表
+# 第一步
 use POST to request https://u-watch.com.cn/api/app/ota/otaType?height=${screenHeight}&width=${screenWidth}
 
 data class DialOtaData(
@@ -394,13 +396,13 @@ data class DialOtaData(
         val ota_style: MutableList<DialOtaTypeStyle>?
 
 )
-
 data class DialOtaTypeStyle(
             val dictType: String?,
             val dictLabel: String?,
             val dictValue: String?
 )
 
+# 第二步
 use POST to request https://u-watch.com.cn/api/app/ota/v3/list with form body:
 
 pageSize = xxx
