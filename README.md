@@ -4,10 +4,12 @@ UWatchBleManager 是一个智能手表蓝牙通信管理类，基于 BLE（蓝�
 快速开始
 # 1. 初始化与连接状态监听
 kotlin
+
 // 继承 AbstractBleManager 实现设备连接逻辑
 class MyBleManager : AbstractBleManager() {
     // 实现连接、断开等基础方法
 }
+
 // 初始化
 UWatchBleManager.init
 
