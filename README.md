@@ -393,14 +393,12 @@ use POST to request https://u-watch.com.cn/api/app/ota/otaType?height=${screenHe
 
 data class DialOtaData(
         val ota_type: MutableList<DialOtaTypeStyle>?,
-        val ota_style: MutableList<DialOtaTypeStyle>?
-
-)
+        val ota_style: MutableList<DialOtaTypeStyle>?)
+        
 data class DialOtaTypeStyle(
             val dictType: String?,
             val dictLabel: String?,
-            val dictValue: String?
-)
+            val dictValue: String?)
 
 # 第二步
 use POST to request https://u-watch.com.cn/api/app/ota/v3/list with form body:
@@ -411,16 +409,13 @@ width = screenWidth
 height = screenHeight
 type = ota_type[i].dictValue
 style = ota_style[i].dictValue
-}
 
 data class DialListResponse(
     val total: Int,
     val rows: List<DialItem>,
     val code: Int,
-    val msg: String?
-)
+    val msg: String?)
 
 data class DialItem(
     val dialBinUrl: String?,
-    val previewImageUrl: String?,
-)
+    val previewImageUrl: String?,)
