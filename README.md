@@ -3,6 +3,7 @@
 UWatchBleManager 是一个智能手表蓝牙通信管理类，基于 BLE（蓝牙低功耗）技术实现与手表的双向通信。本 SDK 提供了设备控制、数据同步、消息推送等完整功能。
 快速开始
 # 项目的清单文件AndroidManifest.xml增加如下权限
+
 <uses-permission
         android:name="android.permission.BLUETOOTH_SCAN"
         android:usesPermissionFlags="neverForLocation"
