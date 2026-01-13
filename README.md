@@ -4,10 +4,7 @@ UWatchBleManager 是一个智能手表蓝牙通信管理类，基于 BLE（蓝�
 快速开始
 # 项目的清单文件AndroidManifest.xml增加如下权限
 
-<uses-permission
-        android:name="android.permission.BLUETOOTH_SCAN"
-        android:usesPermissionFlags="neverForLocation"
-        tools:targetApi="s" />
+<uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation" tools:targetApi="s" />
     <uses-permission
         android:name="android.permission.BLUETOOTH_CONNECT"
         tools:targetApi="s" />
