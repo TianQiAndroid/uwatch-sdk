@@ -7,10 +7,14 @@ UWatchBleManager 是一个智能手表蓝牙通信管理类，基于 BLE（蓝�
 `<uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation" tools:targetApi="s" />`
 
 `<uses-permission android:name="android.permission.BLUETOOTH_CONNECT" tools:targetApi="s" />`
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-<uses-permission android:name="android.permission.BLUETOOTH" />
-<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+`<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />`
+
+`<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />`
+
+`<uses-permission android:name="android.permission.BLUETOOTH" />`
+
+`<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />`
 
 # 1. 初始化与连接状态监听
 kotlin
